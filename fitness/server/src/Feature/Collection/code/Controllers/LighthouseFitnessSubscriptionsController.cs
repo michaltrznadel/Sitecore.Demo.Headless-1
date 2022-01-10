@@ -15,7 +15,8 @@ namespace Sitecore.Demo.Fitness.Feature.Collection.Controllers
     [ImpersonateApiKeyUser]
     [EnableApiKeyCors]
     [SuppressFormsAuthenticationRedirect]
-    public class LighthouseFitnessSubscriptionsController : Controller
+[ServicesController][EnableCors(origins: "*", headers: "*", methods: "*")]
+    public class LighthouseFitnessSubscriptionsController : ServicesApiController 
     {
         private IStringValueListFacetService facetService;
         private ISessionEventSubscriptionsService sessionEventSubscriptionsService;

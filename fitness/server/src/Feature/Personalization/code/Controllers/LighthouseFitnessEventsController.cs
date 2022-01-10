@@ -20,7 +20,8 @@ namespace Sitecore.Demo.Fitness.Feature.Personalization.Controllers
     [ImpersonateApiKeyUser]
     [EnableApiKeyCors]
     [SuppressFormsAuthenticationRedirect]
-    public class LighthouseFitnessEventsController : Controller
+[ServicesController][EnableCors(origins: "*", headers: "*", methods: "*")]
+    public class LighthouseFitnessEventsController : ServicesApiController 
     {
         private IEventDataService dataService;
         private IItemSerializer itemSerializer;

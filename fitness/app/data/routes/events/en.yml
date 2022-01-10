@@ -1,8 +1,8 @@
 id: events-page
 name: events
-displayName: Events
+displayName: Events1
 fields:
-  pageTitle: Events
+  pageTitle: Events1
 placeholders:
   hf-nav:
     - componentName: DetailNavigation

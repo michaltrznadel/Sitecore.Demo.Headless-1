@@ -14,7 +14,8 @@ namespace Sitecore.Demo.Fitness.Feature.Collection.Controllers
     [ImpersonateApiKeyUser]
     [EnableApiKeyCors]
     [SuppressFormsAuthenticationRedirect]
-    public class LighthouseFitnessSessionController : Controller
+[ServicesController][EnableCors(origins: "*", headers: "*", methods: "*")]
+    public class LighthouseFitnessSessionController : ServicesApiController 
     {
         /// <summary>
         /// Triggers session abandon (for development and testing purposes only)
